@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flashThemAll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p align="center"><br>
+<a href="https://github.com/Lolo280374/flashThemAll"><img src="https://hackatime-badge.hackclub.com/U09CBF0DS4F/flashThemAll"></a>
+<a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+<a><img src="https://img.shields.io/badge/os-linux-brightgreen"></a>
+<a><img src="https://img.shields.io/badge/not_for-macOS-red"></a>
+<br><p>
+<header>
+  <h1>flashThemAll</h1>
+  <p>download, and flash any OS and any image to any device, ENTIRELY on CLI!<br>no need to run google for ISO images anymore!</p>
+</header>
+<main>
+  <p>i advise you to check the README instead of this website, it has more info and looks cleaner! thanks :D</p>
+  <p align="center"><a href="https://github.com/Lolo280374/flashThemAll">check out the GitHub!!</a> - <a href="https://flash.lolodotzip.tech/">grab the bash script!</a></p>
+  <section class="showcase">
+    <h2>showcase (screenshots)</h2>
+    <img width="1280" height="720" alt="main flashThemAll banner" src="https://cdn.lolodotzip.tech/flashthemall/517891100-02b6db2f-64a9-4185-a3e8-366ebacfbc3a.png" />
+    <video controls>
+      <source src="https://cdn.lolodotzip.tech/flashthemall/517897788-e51fea92-d5d2-4eef-94b1-a6d7bc74231f.mp4" type="video/mp4">
+      what browser are you using? looks like the video can't load...
+    </video>
+    <video controls>
+      <source src="https://cdn.lolodotzip.tech/flashthemall/517898378-08a9a4b3-302e-4f80-a970-77bf38428e8c.mp4" type="video/mp4">
+      what browser are you using? looks like the video can't load...
+    </video>
+  </section>
+  <section>
+    <h2>features</h2>
+    <p>since i wanted this project to be actually usable in a real life scenario and not just a tech demo, i decided to put features i (and other actual human beings) would actually enjoy and find useful!</p>
+    <p>here's a small list of em:</p>
+    <li>drive listing: lists you the partitions and drives avalaible on your system.</li>
+    <li>ventoy installer: install ventoy to any drive you want, fully from CLI, and super easily!</li>
+    <li>ISO flashing (isohybrid/non iso-hybrid): allows you to flash both isohybrid isos, and also annoying non isohybrid images such as the windows ISOs! meaning you can finally flash windows iso's easily thru CLI on linux!</li>
+    <li>SystemRescue installer: allows you to turn your drive into a rescue bootdrive, packed of recovery features and tools to rescue your linux install!</li>
+    <li>istro repository: allows you, in short, to find, download, and flash, the latest, and ALWAYS the latest ISO of repositories you would want to have flashed on your drive! the installer automatically finds the most up-to-date ISO, downloads it, and flashes it for you! all you have to do is to select which drive to install it to.¹</li>
+    <p>¹compatible for the following distros: Ubuntu, Debian, PopOS, Arch Linux, Alpine Linux, Fedora, CentOS, Linux Mint, Bazzite, and Manjaro.</p>
+  </section>
+  <section>
+    <h2>installation</h2>
+    <p>this script is only compatible on Linux. the good thing however is it requires little to no dependencies, and almost all of them are already baked in your distribution, for sure.</p>
+    <p>to install this script, simply curl the script and run it:</p>
+    <li>curl -L -o flash.sh flash.lolodotzip.tech</li>
+    <li>sudo chmod +x flash.sh</li>
+    <li>./flash.sh</li>
+    <p>note that you will most likely have to chmod +x it, considering it's coming from the Internet.</p>
+  </section>
+    <section>
+    <h2>about this project</h2>
+    <p>for this week of siege, the theme was framework. i wasn't gonna make a whole framework. so i did something for the upcoming framework laptop! heh! (i really want it.)</p>
+    <p>and also, that's an issue i already encountered by the past. i had to first google the ISO, download it, then get Etcher, flash it, a lot of pain. this script now fixes everything! all you gotta do is just select the OS you want, select the USB, and it does it all on its own!</p>
+    <p>so yeah. maybe this week I didn't do a framework. but this can be hella helpful! even out of the framework laptop context. even tho it would obviously work on it, it's just another x86_64 machine.</p>
+  </section>
+  <section>
+    <h2>dependencies</h2>
+    <p>most of the dependencies used by this project are already baked in your Linux distribution, for sure. just in case you're missing one, or you wanna make sure what is this project is using, refer to the table below:</p>
+    <h3>might not be installed by default</h3>
+    <p>this project requires 'rsync' and 'curl'. these are often the less preinstalled packages. make sure you got these two!</p>
+    <h3>often always pre installed</h3>
+    <p>this project also requires the following packages: 'coreutils', 'util-linux', 'grep', 'sed', 'tar', 'sudo', 'bash'.</p>
+    <p>they are often very preinstalled tho, so don't worry too much i guess.</p>
+  </section>
+  <section>
+    <h2>credits</h2>
+    <p>many thanks to these, who without them, the project would probably not have been the same, or looked the same at all!</p>
+    <li><a href="https://www.ventoy.net/">Ventoy</a> - super useful tool for having multiple ISOs on the same device, and for supporting Windows's flashing scheme in our case</li>
+    <li><a href="https://www.system-rescue.org/">SystemRescue</a> - cool tool to repair your broken Linux installs from a single device, with a ton of tools baked in!</li>
+    <li><a href="https://github.com/Lolo280374/flashThemAll?tab=readme-ov-file#features">the Linux distros used in the download picker</a> - great repos i thought of adding because they are quite good and popular, and well without them the downloader would be quite empty...</li>
+    <li><a href="https://github.com/Lolo280374/flashThemAll?tab=readme-ov-file#dependencies">rsync, GNU coreutils and others</a> - thanks to these base linux tools for being here! they are the main essence of this script, allowing for flashing, copying, and downloading!</li>
+    <p>and probably some others I forgotten.. sorry in advance, but thanks for being here!</p>
+  </section>
+  <section>
+    <h2>license</h2>
+    <p>this project is licensed under the MIT license. you can check it <a href="https://github.com/Lolo280374/flashThemAll/blob/master/LICENSE/">here.</a></p>
+    <p>if you have any questions about this project, please reach me <a href="mailto:lolodotzip@hackclub.app">at lolodotzip@hackclub.app</a></p>
+  </section>
+</main>
+</body>
+</html>
+
